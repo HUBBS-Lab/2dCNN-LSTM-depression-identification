@@ -10,7 +10,7 @@ Besides these files, you need to prepare four files and put them in the "data" f
    The participant_id are from the training set. Please note that the binary label for participant 409 should be 1 instead of 0 as shown in 'train_split_Depression_AVEC2017.csv'
 4. dev_labels.pickle: same file structure with train_labels.pickle but with participants from the dev set
 
-Train the models does not require a [FAVE aligner](https://github-wiki-see.page/m/JoFrhwld/FAVE/wiki/FAVE-align) setup. However, if you would like to start from stratch or run some of the codes in "preprocessing" folder, then the FAVE aligner is needed
+Train the models do not require a [FAVE aligner](https://github-wiki-see.page/m/JoFrhwld/FAVE/wiki/FAVE-align) setup. However, if you would like to start from scratch or run some of the codes in the "preprocessing" folder, then the FAVE aligner is needed
 ## Content in Google Drive 
 #### data
 - train_spec_vowel_v2.pickle: the log mel-spectrogram features stored in a dictionary with the format of 
@@ -50,9 +50,9 @@ Train the models does not require a [FAVE aligner](https://github-wiki-see.page/
 - train.py and vowel_classification_cnn/validate.py: train  and validate the vowel CNN 
 - vowel_cnn.pth: the stored model parameters for the trained cnn
 #### speaker_LSTM_pool4 and speaker_LSTM_conv5
-These two folders share a similar file structures
+These two folders share similar file structures
 - extract_feature_space.py: extract the CNN embeddings from spectrograms and the output is speaker_LSTM_conv5/speaker_embeddings_conv5 or speaker_LSTM_pool4/speaker_embeddings_pool4
-- model_LSTM.py: the LSTM strucutre we used in our experiment
-- model.py: the CNN strucutre, same as vowel_classification_cnn
+- model_LSTM.py: the LSTM structure we used in our experiment
+- model.py: the CNN structure, same as vowel_classification_cnn
 - train.py and validate.py: the train and validation of our LSTM model
 - saved_LSTM_pool4 and saved_LSTM_conv5: store our trained LSTM models
