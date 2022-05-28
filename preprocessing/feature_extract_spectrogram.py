@@ -8,13 +8,13 @@ import pickle
 from scipy import stats
 
 
+# label_csv = pd.read_csv(root_path + 'dev_split_Depression_AVEC2017.csv')
 label_csv = pd.read_csv('../data/dev_split_Depression_AVEC2017.csv')
 user_list = list(label_csv['Participant_ID'])
 
 
 
 frame_size = int(16000*0.25)
-# frame_size = int(16000*2)
 overlap = 0.5
 
 feature_dict = {}
@@ -35,13 +35,13 @@ for user in user_list:
             logmelspec = librosa.power_to_db(melspec)
             feature_dict[user].append(logmelspec)
 
+            # print(logmelspec.shape)
+            # exit()
+        # y = np.hstack((y, tmp))
         idx = idx + 1
         filepath = '../data/dev_audio_by_uttr/' + 'spk_' + str(user) + '_uttr' + str(idx) + '.wav'
 
 
-with open('../feature/dev_spec_vowel.pickle', 'wb') as handle:
+with open('../feature/dev_spec_vowel_v3.pickle', 'wb') as handle:
     pickle.dump(feature_dict, handle, protocol=pickle.HIGHEST_PROTOCOL)
-
-
-
 
