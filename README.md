@@ -26,7 +26,7 @@ Train the models does not require a [FAVE aligner](https://github-wiki-see.page/
      ...
    }
   ```
-  This file is used to train the vowel CNN
+  The 'N' means 'not a vowel'. This file is used to train the vowel CNN
 - dev_spec_vowel_v2.pickle: file with a similar structure of train_spec_vowel_v2 and is used to evaluate the vowel CNN
 - train_spec_vowel_v3.pickle: the log mel-spectrogram features for each participant with the sequential information reserved
   ```javascript
