@@ -1,4 +1,4 @@
-# Pytorch implementation of 'Toward Knowledge-Driven Speech-Based Models of Depression: Leveraging Spectrotemporal Information in Speech Vowels'
+# Pytorch implementation of 'Toward Knowledge-Driven Speech-Based Models of Depression: Leveraging Spectrotemporal Variations in Speech Vowels'
 To run this repo, you will first need to download the processed feature files from this [Google Drive link](https://drive.google.com/drive/folders/1SWXtQ9zeSN8L2XOnY18SVKYVJ7tclIqa?usp=sharing). These files were not uploaded to GitHub due to the file size restriction. Unzip the file if needed and put them in the correct folder.
 
 You only need to download the "speaker_LSTM_conv5" and "speaker_LSTM_pool4" if you just want to run the LSTM part.
