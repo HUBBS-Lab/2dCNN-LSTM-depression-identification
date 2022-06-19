@@ -59,3 +59,6 @@ These two folders share similar file structures
 - model.py: the CNN structure, same as vowel_classification_cnn
 - train.py and validate.py: the train and validation of our LSTM model
 - saved_LSTM_pool4 and saved_LSTM_conv5: store our trained LSTM models
+
+## Other settings
+For a complete environmental setting we used, please check the 'env.txt'.
