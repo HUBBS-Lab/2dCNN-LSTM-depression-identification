@@ -62,3 +62,5 @@ These two folders share similar file structures
 
 ## Other settings
 For a complete environmental setting we used, please check the 'env.txt'.
+
+**This repository has been tested on the platform as in 'env.txt'. Configurations (e.g batch size, learning rate) may need to be changed on different platforms.**
